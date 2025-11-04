@@ -1,2 +1,6 @@
-gcc -O0 hello.c -o hello
+# C Compilation and Disassembly
+
+gcc -O2 hello.c -o hello
 ./hello
+objdump -d -C -Mintel --disassemble=main hello
+git aobjdump -d -C -Mintel -s -j .text -j .rodata ./hello
