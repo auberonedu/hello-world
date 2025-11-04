@@ -1,0 +1,2 @@
+gcc -O0 hello.c -o hello
+./hello
