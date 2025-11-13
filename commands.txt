@@ -7,9 +7,12 @@ xxd hello
 gcc -da -O2 hello.c -o hello
 
 objdump -d -C -Mintel --disassemble=main hello
-git aobjdump -d -C -Mintel -s -j .text -j .rodata ./hello
+objdump -d -C -Mintel -s -j .text -j .rodata ./hello
 
 # Java Compilation, Disassembly, and Class Loading
+
+javac Hello.java
+java Hello
 
 xxd Hello.class
 javap -c Hello.class
